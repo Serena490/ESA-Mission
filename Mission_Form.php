@@ -7,12 +7,8 @@
 <body>
 <form action="ESA_Info.php" method="post">
     <p>
-        <label for="firstName">First Name:</label>
+        <label for="name">Name:</label>
         <input type="text" name="first_name" id="firstName">
-    </p>
-    <p>
-        <label for="lastName">Last Name:</label>
-        <input type="text" name="last_name" id="lastName">
     </p>
     <p>
         <label for="destination">Destination:</label>
