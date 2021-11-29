@@ -7,20 +7,24 @@
 <body>
 <form action="ESA_Info.php" method="post">
     <p>
-        <label for="firstName">First Name:</label>
-        <input type="text" name="first_name" id="firstName">
+        <label for="id">ID:</label>
+        <input type="text" name="id" id="id">
     </p>
     <p>
-        <label for="lastName">Last Name:</label>
+        <label for="first_name">First name:</label>
         <input type="text" name="last_name" id="lastName">
     </p>
     <p>
-        <label for="destination">Destination:</label>
-        <input type="text" name="destination" id="destination">
+        <label for="last_name">Last Name:</label>
+        <input type="text" name="first_name" id="firstName">
     </p>
     <p>
-        <label for="launch_date">Launch Date:</label>
-        <input type="text" name="launch_date" id="launch_date">
+        <label for="first_mission">First Mission:</label>
+        <input type="text" name="first_mission" id="first_mission">
+    </p>
+    <p>
+        <label for="no_missions">Number of Missions:</label>
+        <input type="int" name="no_missions" id="no_missions">
     </p>
     <p>
         <label for="type">Type:</label>
