@@ -23,5 +23,5 @@ try {
 }
 ?>
 <div class="d-grid">
-    <button type="button" class="btn btn-primary btn-block"onclick="window.location.href='connection.php'">Connect to Database</button>
+    <button type="button" class="btn btn-primary btn-block"onclick="window.location.href='homepage.php'">Continue to Homepage</button>
   </div>
