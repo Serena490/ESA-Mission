@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Add Record Form</title>
+<title>Target Form</title>
 </head>
 <body>
 <form action="ESA_Info.php" method="post">
