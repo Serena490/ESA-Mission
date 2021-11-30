@@ -8,7 +8,10 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<center>
 <?php
+
+
 $servername = "localhost";
 $username = "admin";
 $password = "password";
@@ -21,13 +24,8 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-?>
-<div class="d-grid">
-    <button type="button" class="btn btn-primary btn-block"onclick="window.location.href='homepage.php'">Continue to Homepage</button>
-  </div>
-  <center>
-      <?php
-      
+
+
         $name = $_REQUEST['name'];
         $destination = $_REQUEST['destination'];
         $launch_date =  $_REQUEST['launch_date'];
