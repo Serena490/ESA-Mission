@@ -25,4 +25,35 @@ try {
 <div class="d-grid">
     <button type="button" class="btn btn-primary btn-block"onclick="window.location.href='homepage.php'">Continue to Homepage</button>
   </div>
+  <center>
+      <?php
+      
+        $name = $_REQUEST['name'];
+        $destination = $_REQUEST['destination'];
+        $launch_date =  $_REQUEST['launch_date'];
+        $type = $_REQUEST['type'];
+        $crew_size = $_REQUEST['crew_size'];
+        $target_id = $_REQUEST['target_id'];
+        
+        $sql = "INSERT INTO Table_Homepage VALUES ('$name',
+			'$destination','$launch_date','$type','$crew_size','$target_id')";
+		
+		if(mysqli_query($conn, $sql)){
+			echo "<h3>data stored in a database successfully."
+				. " Please browse your localhost php my admin"
+				. " to view the updated data</h3>";
 
+			echo nl2br("\n $name\n $destination \n "
+				. "$launch_date\n $type\n $crew_size \n $target_id");
+		} else{
+			echo "ERROR: Hush! Sorry $sql. "
+				. mysqli_error($conn);
+		}
+		
+		// Close connection
+		mysqli_close($conn);
+		?>
+	</center>
+</body>
+
+</html>

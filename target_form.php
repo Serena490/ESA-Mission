@@ -5,7 +5,7 @@
 <title>Target Form</title>
 </head>
 <body>
-<form action="ESA_Info.php" method="post">
+<form action="esamission.sgcreations.store/phpmyadmin" method="post">
     <p>
         <label for="id">ID:</label>
         <input type="text" name="id" id="id">
