@@ -5,7 +5,7 @@
 <title>Mission Form</title>
 </head>
 <body>
-<form action="ESA_Info.php" method="post">
+<form action="mission_info.php" method="post">
     <p>
         <label for="name">Name:</label>
         <input type="text" name="first_name" id="firstName">
