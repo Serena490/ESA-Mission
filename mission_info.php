@@ -8,45 +8,47 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <center>
+
 <?php
 $servername = "localhost";
 $username = "admin";
 $password = "password";
 
-if($conn === false){
-			die("ERROR: Could not connect. "
-				. mysqli_connect_error());
-		}
+try {
+    $conn = new PDO("mysql:host=$servername;dbname=Table_Homepage", $username, $password);
+    // set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+  } catch(PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
+  }
 
-// Putting in all table names
+if(isset($_POST["submit"])){
+$servername='localhost';
+$username='admin';
+$password='password';
 
-        $name = $_REQUEST['name'];
-        $destination = $_REQUEST['destination'];
-        $launch_date =  $_REQUEST['launch_date'];
-        $type = $_REQUEST['type'];
-        $crew_size = $_REQUEST['crew_size'];
-        $target_id = $_REQUEST['target_id'];
-        
-        $sql = "INSERT INTO Table_Homepage VALUES ('$name',
-			'$destination','$launch_date','$type','$crew_size','$target_id')";
-		
-		if(mysqli_query($conn, $sql)){
-			echo "<h3>data stored in a database successfully."
-				. " Please browse your localhost php my admin"
-				. " to view the updated data</h3>";
+try {
+$dbh = new PDO("mysql:host=$servername;dbname=Table_Homepage",$username,$password);
 
-			echo nl2br("\n $name\n $destination \n "
-				. "$launch_date\n $type\n $crew_size \n $target_id");
-		} else{
-			echo "ERROR: Hush! Sorry $sql. "
-				. mysqli_error($conn);
-		}
-		
-		// Close connection
-		mysqli_close($conn);
-		?>
-	</center>
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
+$sql = "INSERT INTO mission (name, destination, launch_date, type, crew_size, target_id)
+VALUES ('".$_POST["name"]."','".$_POST["destination"]."','".$_POST["launch_date"]."'$_POST["type"]."'$_POST["crew_size"]."'$_POST["target_id"])";
+if ($dbh->query($sql)) {
+echo "<script type= 'text/javascript'>alert('New Record Inserted Successfully');</script>";
+}
+else{
+echo "<script type= 'text/javascript'>alert('Data not successfully Inserted.');</script>";
+}
+
+$dbh = null;
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
+}
+
+}
+?>
 </body>
-
-</html>
+</html>                                      
