@@ -1,39 +1,38 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Connection Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+<title>insert data in database using PDO(php data object)</title>
+
 </head>
 <body>
 
+<div id="main">
+<h1>Insert data into database using PDO</h1>
+<div id="login">
+<h2>Student's Form</h2>
+<hr/>
+<form action="" method="post">
+<label>Student Name :</label>
+<input type="text" name="stu_name" id="name" required="required" placeholder="Please Enter Name"/><br /><br />
+<label>Student Email :</label>
+<input type="email" name="stu_email" id="email" required="required" placeholder="john123@gmail.com"/><br/><br />
+<label>Student City :</label>
+<input type="text" name="stu_city" id="city" required="required" placeholder="Please Enter Your City"/><br/><br />
+<input type="submit" value=" Submit " name="submit"/><br />
+</form>
+</div>
+
 <?php
-$servername = "localhost";
-$username = "admin";
-$password = "password";
-
-try {
-    $conn = new PDO("mysql:host=$servername;dbname=Table_Homepage", $username, $password);
-    // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
-  } catch(PDOException $e) {
-    echo "Connection failed: " . $e->getMessage();
-  }
-
 if(isset($_POST["submit"])){
-$servername='localhost';
+$hostname='localhost';
 $username='admin';
 $password='password';
 
 try {
-$dbh = new PDO("mysql:host=$servername;dbname=Table_Homepage",$username,$password);
+$dbh = new PDO("mysql:host=$hostname;dbname=Table_Homepage",$username,$password);
 
 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // <== add this line
-$sql = "INSERT INTO mission (name, destination, launch_date, type, crew_size, target_id)
-VALUES ('".$_POST["name"]."','".$_POST["destination"]."','".$_POST["launch_date"]."'$_POST["type"]."'$_POST["crew_size"]."'$_POST["target_id"])";
+$sql = "INSERT INTO mission (student_name, student_email, student_city)
+VALUES ('".$_POST["stu_name"]."','".$_POST["stu_email"]."','".$_POST["stu_city"]."')";
 if ($dbh->query($sql)) {
 echo "<script type= 'text/javascript'>alert('New Record Inserted Successfully');</script>";
 }
@@ -51,4 +50,4 @@ echo $e->getMessage();
 }
 ?>
 </body>
-</html>                                      
+</html>
