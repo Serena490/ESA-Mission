@@ -8,23 +8,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-<center>
+    <center>
 <?php
-
-
 $servername = "localhost";
 $username = "admin";
 $password = "password";
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=Table_Homepage", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
+if($conn === false){
+			die("ERROR: Could not connect. "
+				. mysqli_connect_error());
+		}
 
+// Putting in all table names
 
         $name = $_REQUEST['name'];
         $destination = $_REQUEST['destination'];
