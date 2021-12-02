@@ -1,22 +1,30 @@
 <?php
+
 $servername = "localhost";
-$username = "username";
+$username = "admin";
 $password = "password";
-$dbname = "Table_Homepage";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+  $conn = new PDO("mysql:host=$servername;dbname=Table_Homepage", $username, $password);
   // set the PDO error mode to exception
   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  $sql = "INSERT INTO mission (target_id, destination, launch_date)
-  VALUES ('John', 'Doe', 'john@example.com')";
-  // use exec() because no results are returned
-  $conn->exec($sql);
-  $last_id = $conn->lastInsertId();
-  echo "New record created successfully. Last inserted ID is: " . $last_id;
+  echo "Connected successfully";
 } catch(PDOException $e) {
-  echo $sql . "<br>" . $e->getMessage();
+  echo "Connection failed: " . $e->getMessage();
+}
+
+$sql = "INSERT INTO MyGuests (firstname, lastname, email)
+VALUES ('John', 'Doe', 'john@example.com')";
+// use exec() because no results are returned
+$conn->exec($sql);
+$last_id = $conn->lastInsertId();
+echo "New record created successfully. Last inserted ID is: " . $last_id;
+} catch(PDOException $e) {
+echo $sql . "<br>" . $e->getMessage();
 }
 
 $conn = null;
+?>
+
+
 ?>
