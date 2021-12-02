@@ -12,7 +12,7 @@ try {
  
 // Attempt insert query execution
 try{
-    $sql = "INSERT INTO mission (target_id, destination, type, crew_size, name, launch_date) VALUES ('Peter', 'Parker', 'peterparker@mail.com','','','')";    
+    $sql = "INSERT INTO mission (target_id, destination, type, crew_size, name, launch_date) VALUES ('','', '','','','')";    
     $pdo->exec($sql);
     echo "Records inserted successfully.";
 } catch(PDOException $e){
