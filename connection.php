@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-/*
+
 $servername = "localhost";
 $username = "admin";
 $password = "password";
