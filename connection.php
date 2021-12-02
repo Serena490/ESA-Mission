@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +10,7 @@
 </head>
 <body>
 <?php
+/*
 $servername = "localhost";
 $username = "admin";
 $password = "password";
@@ -26,3 +28,4 @@ try {
     <button type="button" class="btn btn-primary btn-block"onclick="window.location.href='homepage.php'">Continue to Homepage</button>
   </div>
 
+-->
