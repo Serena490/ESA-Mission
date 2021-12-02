@@ -4,27 +4,23 @@ $servername = "localhost";
 $username = "admin";
 $password = "password";
 
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=Table_Homepage", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+$sql = "INSERT INTO mission (name, destination, launch_date, type, crew_size, target_id)
+VALUES ('".$_POST["name"]."','".$_POST["destination"]."','".$_POST["launch_date"]."'$_POST["type"]."'$_POST["crew_size"]."'$_POST["target_id"])";
+if ($dbh->query($sql)) {
+echo "<script type= 'text/javascript'>alert('New Record Inserted Successfully');</script>";
+}
+else{
+echo "<script type= 'text/javascript'>alert('Data not successfully Inserted.');</script>";
 }
 
-$sql = "INSERT INTO MyGuests (firstname, lastname, email)
-VALUES ('John', 'Doe', 'john@example.com')";
-// use exec() because no results are returned
-$conn->exec($sql);
-$last_id = $conn->lastInsertId();
-echo "New record created successfully. Last inserted ID is: " . $last_id;
-} catch(PDOException $e) {
-echo $sql . "<br>" . $e->getMessage();
+$dbh = null;
+}
+catch(PDOException $e)
+{
+echo $e->getMessage();
 }
 
-$conn = null;
-?>
+}
 
 
-?>
+<
