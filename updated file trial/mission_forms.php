@@ -25,7 +25,7 @@
     </p>
     <p>
         <label for="crew_size">Crew Size:</label>
-        <input type="nuumber" name="crew_size" id="crew_size">
+        <input type="number" name="crew_size" id="crew_size">
     </p>
     <p>
         <label for="target_id">Target ID:</label>
