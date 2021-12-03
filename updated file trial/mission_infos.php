@@ -11,7 +11,7 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-?>
+
 
    // Taking all 5 values from the form data(input)
    $target_id =  $_REQUEST['target_id'];
