@@ -4,6 +4,13 @@ $username = "username";
 $password = "password";
 $dbname = "Table_Homepage";
 
+
+
+
+
+
+
+
 try {
   $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
   // set the PDO error mode to exception
@@ -11,6 +18,15 @@ try {
 } catch(PDOException $e){
   die("ERROR: Could not connect. " . $e->getMessage());
 }
+
+
+
+
+
+
+
+
+/*
 try{
 $sql = "INSERT INTO Mission (name, destination, launch_date, type, crew_size, target_id)
 VALUES ('"<div class="$_REQUEST"></div>["name"]."','".$_REQUEST["destination"]."','".$_REQUEST["launch_date"]."'$_REQUEST["type"]."','"$_REQUEST["crew_size"]."'.'$_REQUEST["target_id"])";
