@@ -6,7 +6,7 @@
 </head>
 <body>
  
-<form action="mission_info.php" method="post">
+<form action="mission_infos.php" method="post">
     <p>
         <label for="name">Name:</label>
         <input type="text" name="name" id="name">
