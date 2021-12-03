@@ -5,7 +5,12 @@
 <title>Astronaut Form</title>
 </head>
 <body>
-<form action="ESA_Info.php" method="post">
+<form method="post" action="<?php echo $_SERVER['mission_info.php'];?>">
+
+
+
+</form>
+<!--<form action="ESA_Info.php" method="post"-->
     <p>
         <label for="astronaut_id">Astronaut ID:</label>
         <input type="text" name="astronaut_id" id="astronaut_id">
