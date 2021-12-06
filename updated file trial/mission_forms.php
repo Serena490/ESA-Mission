@@ -80,10 +80,6 @@
                             <label>Crew Size</label>
                             <input type="number" name="crew_size" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <label>Target ID</label>
-                            <input type="number" name="target_id" class="form-control">
-                        </div>
                         <input type="submit" class="btn btn-primary" name="submit" value="Submit">
                     </form>
                 </div>
