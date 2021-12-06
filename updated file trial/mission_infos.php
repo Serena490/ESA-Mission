@@ -17,7 +17,7 @@ if(isset($_POST['submit']))
      $type = $_POST['type'];
      $target_id = $conn->insert_id;
      
-     $sql = "INSERT INTO Mission (name,destination,type,crew_size,launch_date)
+     $sql = "INSERT INTO Mission (name,destination,type,crew_size,launch_date,target_id)
      VALUES ('$name','$destination','$type','$crew_size','$launch_date','$target_id')";
      
      
