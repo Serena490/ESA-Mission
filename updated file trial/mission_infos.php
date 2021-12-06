@@ -12,13 +12,15 @@ if(isset($_POST['submit']))
 {    
      $name = $_POST['name'];
      $destination = $_POST['destination'];
-     $type = $_POST['type'];
-     $target_id = $_POST['target_id];
      $launch_date = $_POST['launch_date'];
      $crew_size = $_POST['crew_size'];
-
+     $type = $_POST['type'];
+     $target_id = $_POST['target_id'];
+     
      $sql = "INSERT INTO Mission (name,destination,type,target_id,crew_size,launch_date)
      VALUES ('$name','$destination','$type','$target_id','$crew_size','$launch_date')";
+     
+     
      if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
      } else {
