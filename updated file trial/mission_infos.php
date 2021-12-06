@@ -30,7 +30,7 @@ if(isset($_POST['submit']))
      mysqli_close($conn);
 }
 ?> */
-<?php
+
     $servername='localhost';
     $username='admin';
     $password='password';
