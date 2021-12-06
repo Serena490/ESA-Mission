@@ -15,10 +15,10 @@ if(isset($_POST['submit']))
      $launch_date = $_POST['launch_date'];
      $crew_size = $_POST['crew_size'];
      $type = $_POST['type'];
-     $target_id = $_POST['target_id'];
      
-     $sql = "INSERT INTO Mission (name,destination,type,target_id,crew_size,launch_date)
-     VALUES ('$name','$destination','$type','$target_id','$crew_size','$launch_date')";
+     
+     $sql = "INSERT INTO Mission (name,destination,type,crew_size,launch_date)
+     VALUES ('$name','$destination','$type','$crew_size','$launch_date')";
      
      
      if (mysqli_query($conn, $sql)) {
