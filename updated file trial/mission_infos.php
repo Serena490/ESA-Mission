@@ -46,7 +46,7 @@ if(isset($_POST['submit']))
   
     
      $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
-     $sql = "INSERT INTO table1 (name)
+     $sql = "INSERT INTO test1 (name)
      VALUES ('$name')";
      
 
