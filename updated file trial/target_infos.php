@@ -11,14 +11,13 @@ include_once 'mission_forms.php';
 if(isset($_POST['submit']))
 {    
      $name = $_POST['name'];
-     $destination = $_POST['destination'];
-     $launch_date = $_POST['launch_date'];
-     $crew_size = $_POST['crew_size'];
+     $first_mission = $_POST['destination'];
+     $no_mission = $_POST['launch_date'];
      $type = $_POST['type'];
      $target_id = $conn->insert_id;
      
-     $sql = "INSERT INTO Mission (name,destination,type,crew_size,launch_date)
-     VALUES ('$name','$destination','$type','$crew_size','$launch_date','$target_id')";
+     $sql = "INSERT INTO Targets (name,first_mission,type,no_missions,target_id)
+     VALUES ('$name','$first_mission','$type','$no_missions',)";
      
      
      if (mysqli_query($conn, $sql)) {

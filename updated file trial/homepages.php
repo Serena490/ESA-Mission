@@ -25,7 +25,7 @@
 <div class="d-grid gap-6">
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='mission_forms.php'">Create Mission</button>
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='mission_infos.php'">View Mission</button>
-  <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='https://w3docs.com'" >Amend Mission</button>
+  <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='target_form.php'" >Amend Mission</button>
    <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='astronaut_forms.php'">Create Astronaut ID</button>
      <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='https://w3docs.com'">View Astronaut ID </button>
        <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='https://w3docs.com'">Amend Astronaut ID</button>
