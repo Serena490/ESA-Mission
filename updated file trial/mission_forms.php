@@ -31,7 +31,7 @@
                         </div>
                         <div class="form-group">
                             <label>Launch Date</label>
-                            <input type="text" name="launch_date" class="form-control">
+                            <input type="date" name="launch_date" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Type</label>
