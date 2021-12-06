@@ -16,11 +16,12 @@ if(isset($_POST['submit']))
      $crew_size = $_POST['crew_size'];
      $type = $_POST['type'];
      $target_id = $conn->insert_id;
-     
+    
+     $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
      $sql = "INSERT INTO Mission (name,destination,type,crew_size,launch_date,target_id)
      VALUES ('$name','$destination','$type','$crew_size','$launch_date','$target_id')";
      
-     
+
      if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
      } else {
