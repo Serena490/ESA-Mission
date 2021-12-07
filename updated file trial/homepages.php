@@ -28,7 +28,7 @@
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'" >Amend Mission</button>
    <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='astronaut_forms.php'">Create Astronaut ID</button>
      <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">View Astronaut ID </button>
-       <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">Amend Astronaut ID</button>
+       <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='UPDATEfile.php'">Amend Astronaut ID</button>
 </div>
 
 </body>
