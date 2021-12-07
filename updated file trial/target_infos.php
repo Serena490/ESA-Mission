@@ -36,7 +36,7 @@ if(isset($_POST['submit']))
       if(!$conn){
           die('Could not Connect MySql Server:' .mysql_error());
         }
-include_once 'testingform.php';
+include_once 'testingforms2.php';
 if(isset($_POST['submit']))
 {    
      $name = $_POST['name'];
