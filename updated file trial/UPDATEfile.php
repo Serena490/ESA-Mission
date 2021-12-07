@@ -2,21 +2,6 @@
 <html>
 <head>
 <title>Table with database</title>
-<style>
-table {
-border-collapse: collapse;
-width: 100%;
-color: #588c7e;
-font-family: monospace;
-font-size: 25px;
-text-align: left;
-}
-th {
-background-color: #588c7e;
-color: white;
-}
-tr:nth-child(even) {background-color: #f2f2f2}
-</style>
 </head>
 <body>
 <table>
@@ -34,14 +19,18 @@ tr:nth-child(even) {background-color: #f2f2f2}
       if(!$conn){
           die('Could not Connect MySql Server:' .mysql_error());
         }
-
-$sql = "SELECT '', '', '','','' FROM Mission";
+        include_once 'testingform.php';
+        if(isset($_POST['submit']))
+        {    
+             $name = $_POST['name'];
+          
+            
+$sql = "SELECT $name, target_id FROM Mission";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["id"]. "</td><td>" . $row["username"] . "</td><td>"
-. $row["password"]. "</td></tr>";
+echo "<tr><td>" . $row["target_id"]. "</td><td>" . $row["name"] . "</td><td>";
 }
 echo "</table>";
 } else { echo "0 results"; }
