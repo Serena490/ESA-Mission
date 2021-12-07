@@ -39,7 +39,8 @@ if(isset($_POST['submit']))
 include_once 'testingforms2.php';
 if(isset($_POST['submit']))
 {    
-     $name = $_POST['name'];
+    
+   $name = $_POST['name'];
   
     
      $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
