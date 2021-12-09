@@ -11,6 +11,7 @@
         }
     </style>
 </head>
+<!-- This will load the html and will put bootstrap as the css and -->
 <body>
     <div class="wrapper">
         <div class="container-fluid">
@@ -21,6 +22,7 @@
                     </div>
                     <p>Please fill this form and submit to add employee record to the database.</p>
                     <form action="mission_infos.php" method="post">
+                        <!--aaaaaa-->
                         <div class="form-group">
                             <label>Name</label>
                             <input type="text" name="name" class="form-control">
@@ -49,3 +51,4 @@
     </div>
 </body>
 </html>
+<!--This uses each  -->

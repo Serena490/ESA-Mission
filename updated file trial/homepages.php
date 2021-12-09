@@ -9,19 +9,21 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<!--This will load the html which contains the title of the tab, the size and the bootstrap as its stylesheet -->
 <style>
  body {
   background-image: url('Space-Range_Homepage_Background.png');
 }
 </style>
 </head>
+<!--This puts my picture as the background in the wwww grid which is presented neatly to the user for a professional effect -->
 <body>
 
 <div class="jumbotron text-center">
   <h1>Space-Range Homepage</h1>
   <p>Resize this responsive page to see the effect!</p> 
 </div>
-  
+<!-- This presents the Heading title of the webpage and gives the user information relating to the webpage -->
 <div class="d-grid gap-6">
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='mission_forms.php'">Create Mission</button>
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">View Mission</button>
@@ -30,6 +32,6 @@
      <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">View Astronaut ID </button>
        <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='testingform.php'">Amend Astronaut ID</button>
 </div>
-
+<!--This will present six buttons which will lead the user into different locations so they can either create, edit or view missions and astronaut ids.-->
 </body>
 </html>

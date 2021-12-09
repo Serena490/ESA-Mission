@@ -23,19 +23,24 @@
         if(isset($_POST['submit']))
         {    
              $name = $_POST['name'];
-          
-            
-$sql = "SELECT $name, target_id FROM Mission";
-$result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["target_id"]. "</td><td>" . $row["name"] . "</td><td>";
-}
-echo "</table>";
-} else { echo "0 results"; }
-$conn->close();
-?>
+              
+             $sql = "SELECT * FROM Mission                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+              
+             $query = mysqli_query($conn,$sql);
+              
+             if(!$query)
+             {
+                 echo "Query does not work.".mysqli_error($conn);die;
+             }
+              
+             while($data = mysqli_fetch_array($query))
+             {
+                 echo "Id = ".$data['id']."<br>";
+                 echo "Firstname = ".$data['firstname']."<br>";
+                 echo "Lastname = ".$data['lastname']."<br>";
+                 echo "Mobile = ".$data['mobile']."<br><hr>";
+             }
+             ?>
 </table>
 </body>
 </html>
