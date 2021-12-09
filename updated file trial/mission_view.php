@@ -76,7 +76,7 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-$sql = "SELECT * FROM Mission";
+$sql = "select * FROM Mission";
 
     //$conn = mysqli_connect("localhost","admin","password","ESA");
       //  $sql = "SELECT * FROM Mission";
