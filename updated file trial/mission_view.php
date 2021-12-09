@@ -63,7 +63,7 @@ tr:nth-child(even) {background-color: #f2f2f2}
      <th>Launch Date</th>
     </tr>
      <?php
-    $conn = mysqli_connect("localhost","admin","password","ESA");
+    //$conn = mysqli_connect("localhost","admin","password","ESA");
       //  $sql = "SELECT * FROM Mission";
        // $result = $conn-> query($sql);
       //  if ($result->num_rows > 0 {
