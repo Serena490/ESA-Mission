@@ -13,12 +13,9 @@
                 <th>Type</th>
                 <th>Launch Date</th>
             </tr>
-            <?php /*
-            $servername='localhost';
-            $username='admin';
-            $password='password';
-            $dbname = "ESA";
-            $conn=mysqli_connect($servername,$username,$password,"$dbname");
+            <?php 
+
+            $conn=mysqli_connect("localhost","admin","password","ESA");
               if(!$conn){
                   die('Could not Connect MySql Server:' .mysql_error());
                 }
