@@ -34,6 +34,7 @@
             echo "No entries found please enter information";
         }
         mysqli_close($conn);
+        ?>
         </table>
     </body>
 </html>
