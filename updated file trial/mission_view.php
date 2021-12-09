@@ -70,8 +70,6 @@ tr:nth-child(even) {background-color: #f2f2f2}
             while ($row = $result->fetch_assoc()) {
                 echo "<tr><td>". $row["target_id"] . "</td><td>". $row["mission_name"] . "</td><td>". $row["destination"] . "</td><td>". $row["crew_size"] . "</td><td>". $row["type"] . "</td><td>". $row["launch_date"] . "</td></tr>";
             }
-            echo "</table>";
-        }
         else {
             echo "No entries found please enter information";
         }
