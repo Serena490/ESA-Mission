@@ -78,9 +78,6 @@ try {
 }
 $sql = "SELECT * FROM Mission";
 
-                echo "<tr><td>". $row["target_id"] . "</td><td>". $row["mission_name"] . "</td><td>". $row["destination"] . "</td><td>". $row["crew_size"] . "</td><td>". $row["type"] . "</td><td>". $row["launch_date"] . "</td></tr>";
-            
-     <!--
     //$conn = mysqli_connect("localhost","admin","password","ESA");
       //  $sql = "SELECT * FROM Mission";
        // $result = $conn-> query($sql);
