@@ -63,11 +63,11 @@ tr:nth-child(even) {background-color: #f2f2f2}
 <th>Launch Date</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "admin", "password", "ESA");
+$conn = mysqli_connect("localhost", "admin", "password", "Table_Homepage");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT target_id, destination, crew_size, mission_name, launch_date FROM Mission";
+$sql = "SELECT destination, crew_size, mission_name, launch_date FROM Mission";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
