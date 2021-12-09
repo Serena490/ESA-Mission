@@ -76,7 +76,16 @@ try {
 } catch(PDOException $e) {
   echo "Connection failed: " . $e->getMessage();
 }
-
+$sql = "SELECT * FROM Mission";
+        $result = $conn-> query($sql);
+        if ($result->num_rows > 0 {
+            while ($row = $result->fetch_assoc()) {
+                echo "<tr><td>". $row["target_id"] . "</td><td>". $row["mission_name"] . "</td><td>". $row["destination"] . "</td><td>". $row["crew_size"] . "</td><td>". $row["type"] . "</td><td>". $row["launch_date"] . "</td></tr>";
+            }
+        else {
+            echo "No entries found please enter information";
+        }
+       mysqli_close($conn);
     ?>
      <!--
     //$conn = mysqli_connect("localhost","admin","password","ESA");
