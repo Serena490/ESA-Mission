@@ -26,7 +26,7 @@
 <!-- This presents the Heading title of the webpage and gives the user information relating to the webpage -->
 <div class="d-grid gap-6">
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='mission_forms.php'">Create Mission</button>
-  <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">View Mission</button>
+  <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='mission_view.php'">View Mission</button>
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='AAA.php'" >Amend Mission</button>
    <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='astronaut_forms.php'">Create Astronaut ID</button>
      <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">View Astronaut ID </button>
