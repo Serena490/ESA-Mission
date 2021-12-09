@@ -67,7 +67,7 @@ $conn = mysqli_connect("localhost", "admin", "password", "ESA");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT target_id, destination, type, crew_size, mission_name, launch_date FROM Mission";
+$sql = "SELECT target_id, destination, crew_size, mission_name, launch_date FROM Mission";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
