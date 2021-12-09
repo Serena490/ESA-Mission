@@ -62,7 +62,7 @@ tr:nth-child(even) {background-color: #f2f2f2}
      <th>Type</th>
      <th>Launch Date</th>
     </tr>
-     <?php
+     <!--
     //$conn = mysqli_connect("localhost","admin","password","ESA");
       //  $sql = "SELECT * FROM Mission";
        // $result = $conn-> query($sql);
@@ -80,7 +80,7 @@ tr:nth-child(even) {background-color: #f2f2f2}
 <th>Id</th>
 <th>\Name</th>
 </tr> -->
-<?php /*
+<!-- /*
 $conn = mysqli_connect("localhost", "admin", "password", "test");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
