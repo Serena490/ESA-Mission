@@ -1,4 +1,4 @@
-<html>
+<!--<html>
 <head>
 <title>Create Record</title>
 </head>
@@ -12,7 +12,7 @@
                 <th>Type</th>
                 <th>Launch Date</th>
             </tr>
-            <?php 
+             /* php
             $conn = mysqli_connect("localhost","admin","password","ESA");
         $sql = "SELECT target_id, mission_name, destination, crew_size, type, launch_date FROM Mission";
         $result = $conn-> query($sql);
@@ -30,4 +30,50 @@
         ?>
         </table>
     </body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table with database</title>
+<style>
+table {
+border-collapse: collapse;
+width: 100%;
+color: #588c7e;
+font-family: monospace;
+font-size: 25px;
+text-align: left;
+}
+th {
+background-color: #588c7e;
+color: white;
+}
+tr:nth-child(even) {background-color: #f2f2f2}
+</style>
+</head>
+<body>
+<table>
+<tr>
+<th>Id</th>
+<th>\Name</th>
+</tr>
+<?php
+$conn = mysqli_connect("localhost", "admin", "password", "test");
+if ($conn->connect_error) {
+die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT ID, Name FROM test1";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+// output data of each row
+while($row = $result->fetch_assoc()) {
+echo "<tr><td>" . $row["ID"]. "</td><td>" . $row["Name"] . "</td></tr>";
+}
+echo "</table>";
+} else { echo "0 results"; }
+$conn->close();
+?>
+</table>
+</body>
 </html>
