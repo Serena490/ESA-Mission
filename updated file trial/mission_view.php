@@ -64,7 +64,7 @@ tr:nth-child(even) {background-color: #f2f2f2}
     </tr>
      <?php
     $conn = mysqli_connect("localhost","admin","password","ESA");
-        $sql = "SELECT * FROM Mission";
+      //  $sql = "SELECT * FROM Mission";
        // $result = $conn-> query($sql);
       //  if ($result->num_rows > 0 {
          //   while ($row = $result->fetch_assoc()) {
