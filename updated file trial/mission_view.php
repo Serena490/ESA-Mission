@@ -62,6 +62,12 @@ tr:nth-child(even) {background-color: #f2f2f2}
      <th>Type</th>
      <th>Launch Date</th>
     </tr>
+     <?php
+    $conn = mysqli_connect("localhost","admin","password","ESA");
+        $sql = "SELECT * FROM Mission";
+        $result = $conn-> query($sql);
+
+        ?>
 <!--<tr>
 <th>Id</th>
 <th>\Name</th>
