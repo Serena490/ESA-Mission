@@ -40,7 +40,7 @@
 table {
 border-collapse: collapse;
 width: 100%;
-color: #588c7e;
+color: #;
 font-family: monospace;
 font-size: 25px;
 text-align: left;
@@ -54,11 +54,19 @@ tr:nth-child(even) {background-color: #f2f2f2}
 </head>
 <body>
 <table>
-<tr>
+    <tr>
+     <th>Target ID</th>
+     <th>Mission Name</th>
+     <th>Destination</th>
+     <th>Crew Size</th>
+     <th>Type</th>
+     <th>Launch Date</th>
+    </tr>
+<!--<tr>
 <th>Id</th>
 <th>\Name</th>
-</tr>
-<?php
+</tr> -->
+<?php /*
 $conn = mysqli_connect("localhost", "admin", "password", "test");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
