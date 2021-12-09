@@ -19,7 +19,7 @@
               if(!$conn){
                   die('Could not Connect MySql Server:' .mysql_error());
                 }
-        $sql = "SELECT * FROM Missions";
+        $sql = "SELECT * FROM Mission";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0 {
