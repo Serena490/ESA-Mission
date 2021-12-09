@@ -63,16 +63,16 @@ tr:nth-child(even) {background-color: #f2f2f2}
 <th>Launch Date</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "admin", "password", "Table_Homepage");
+$conn = mysqli_connect("localhost", "admin", "password", "ESA");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT destination, crew_size, mission_name, launch_date FROM Mission";
+$sql = "SELECT mission_name FROM Mission";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {
-echo <tr><td>". $row["target_id"] . "</td><td>". $row["mission_name"] . "</td><td>". $row["destination"] . "</td><td>". $row["crew_size"] . "</td><td>". $row["type"] . "</td><td>". $row["launch_date"] . "</td></tr>"
+echo <tr><td>". $row["mission_name"]."</td></tr>"
 }
 echo "</table>";
 } else { echo "0 results"; }
