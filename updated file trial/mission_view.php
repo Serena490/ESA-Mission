@@ -16,9 +16,6 @@
             <?php 
 
             $conn=mysqli_connect("localhost","admin","password","ESA");
-              if(!$conn){
-                  die('Could not Connect MySql Server:' .mysql_error());
-                }
         $sql = "SELECT * FROM Mission";
         $result = $conn->query($sql);
 
