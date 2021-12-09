@@ -8,7 +8,7 @@
           die('Could not Connect MySql Server:' .mysql_error());
         }
 
-        include_once 'AAA.php';
+       
         $target_id=$_POST["target_id"]
         $sql = "SELECT * FROM Mission WHERE target_id='$target_id'";
         
