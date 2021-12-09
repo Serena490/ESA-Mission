@@ -55,20 +55,24 @@ tr:nth-child(even) {background-color: #f2f2f2}
 <body>
 <table>
 <tr>
-<th>Id</th>
-<th>\Name</th>
+<th>Target ID</th>
+<th>Destination</th>
+<th>Type</th>
+<th>Crew Size</th>
+<th>Mission Name</th>
+<th>Launch Date</th>
 </tr>
 <?php
-$conn = mysqli_connect("localhost", "admin", "password", "test");
+$conn = mysqli_connect("localhost", "admin", "password", "ESA");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT ID, Name FROM test1";
+$sql = "SELECT target_id, destination, type, crew_size, mission_name, launch_date FROM Mission";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
 // output data of each row
 while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["ID"]. "</td><td>" . $row["Name"] . "</td></tr>";
+echo <tr><td>". $row["target_id"] . "</td><td>". $row["mission_name"] . "</td><td>". $row["destination"] . "</td><td>". $row["crew_size"] . "</td><td>". $row["type"] . "</td><td>". $row["launch_date"] . "</td></tr>"
 }
 echo "</table>";
 } else { echo "0 results"; }
