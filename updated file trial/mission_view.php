@@ -64,6 +64,19 @@ tr:nth-child(even) {background-color: #f2f2f2}
     </tr>
 
     <?php
+$servername = "localhost";
+$username = "admin";
+$password = "password";
+
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=ESA", $username, $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  echo "Connected successfully";
+} catch(PDOException $e) {
+  echo "Connection failed: " . $e->getMessage();
+}
+
     ?>
      <!--
     //$conn = mysqli_connect("localhost","admin","password","ESA");
