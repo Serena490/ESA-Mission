@@ -11,7 +11,7 @@
 <body>
 <div class="container mt-3">
   <h2>Space Portal</h2>
-  <p>This is the space rage portal where astronauts may log missions and more, click down below to enter the homepage:</p>
+  <p>This is the space range portal where astronauts may log missions and more, click down below to enter the homepage:</p>
   <div class="d-grid">
     <button type="button" class="btn btn-primary btn-block"onclick="window.location.href='homepages.php'">Proceed to homepage</button>
 <!--This will print text expaining how to get to the astronaut homepage and will display a huge button which the user will press to proceed to homepage-->
