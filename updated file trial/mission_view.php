@@ -13,7 +13,7 @@
                 <th>Type</th>
                 <th>Launch Date</th>
             </tr>
-            <?php
+            <?php /*
             $servername='localhost';
             $username='admin';
             $password='password';
