@@ -24,6 +24,7 @@ if(isset($_POST['submit']))
    
 // The $sql attribute allows the information which has been inputted to the user to be sent to the database and translatted from php to SQL so that phpMyAdmin understands what it is being told to do 
 // When this is executed the information inputted by the user is saved under the variables and will be sent to the database and is inserted into the specified column names and table
+     <div>
      if (mysqli_query($conn, $sql)) {
         echo "New record has been added successfully !";
      } else {
