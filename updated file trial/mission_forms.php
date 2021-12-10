@@ -25,7 +25,7 @@
                         <!--aaaaaa-->
                         <div class="form-group">
                             <label>Name</label>
-                            <input type="text" name="mission_name" class="form-control">
+                            <input type="text" name="name" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Destination</label>
