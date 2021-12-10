@@ -49,16 +49,14 @@ include_once 'mission_forms.php';
 // This tells the code to link mission_forms.php to this php file
 if(isset($_POST['submit']))
 {    
-     $target_id = $conn->insert_id;
+     $target_id = $_POST['target_id']
      $destination = $_POST['destination'];
      $type = $_POST['type'];
      $crew_size = $_POST['crew_size'];
      $launch_date = $_POST['launch_date'];
      $mission_name = $_POST['mission_name'];
 // This tells the php file that each variable will equal the information which has been sent from the mission_forms.php file which is the user input inside the form
-     $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
-     $sql = "INSERT INTO Targets (target_id)
-     VALUES ('$target_id')";
+   //  $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
      $sql = "INSERT INTO Mission (destination,type,crew_size,mission_name,launch_date)
 
      VALUES ('$destination','$type','$crew_size','$mission_name','$launch_date')";

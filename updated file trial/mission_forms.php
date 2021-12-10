@@ -79,12 +79,12 @@ This uses each  -->
                     <form action="mission_infos.php" method="post">
                         <!--aaaaaa-->
                         <div class="form-group">
-                            <label>Crew Size</label>
-                            <input type="number" name="crew_size" class="form-control">
+                            <label>Destination</label>
+                            <input type="text" name="destination" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Target ID</label>
-                            <input type="int" name="target_id" class="form-control">
+                            <input type="number" name="target_id" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Type</label>
