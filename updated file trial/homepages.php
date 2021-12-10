@@ -29,7 +29,7 @@
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='mission_view.php'">View Mission</button>
   <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='AAA.php'" >Amend Mission</button>
    <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='astronaut_forms.php'">Create Astronaut ID</button>
-     <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='PLACETEXT'">View Astronaut ID </button>
+     <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='astronaut_view.php'">View Astronaut ID </button>
        <button type="button" class="btn btn-dark btn-block" onclick="window.location.href='testingform.php'">Amend Astronaut ID</button>
 </div>
 <!--This will present six buttons which will lead the user into different locations so they can either create, edit or view missions and astronaut ids.-->
