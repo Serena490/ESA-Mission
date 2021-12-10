@@ -92,14 +92,17 @@ tr:nth-child(even) {background-color: #f2f2f2}
        //     echo "No entries found please enter information";
     //    }
       //  mysqli_close($conn);
-    
-$conn = mysqli_connect("localhost", "admin", "password", "ESA");
-if ($conn->connect_error) {
-die("Connection failed: " . $conn->connect_error);
-}
-else {echo "connected";}
+ 
+$servername='localhost';
+$username='admin';
+$password='password';
+$dbname = "Table_Homepage";
+$conn=mysqli_connect($servername,$username,$password,"$dbname");
+if(!$conn){
+    die('Could not Connect MySql Server:' .mysql_error());
+    }
 $sql = "SELECT * FROM Astronaut";
-$result = $conn->query($sql);
+$result = $conn->query($conn, $sql);
 print_r($result);
 // if ($result->num_rows > 0) {
 // // output data of each row
