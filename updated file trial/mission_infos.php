@@ -7,7 +7,7 @@
       if(!$conn){
           die('Could not Connect MySql Server:' .mysql_error());
         }
-        /*
+        
 // This connects the php file to the phpmyadmin database by specifing the servername, username, password and database name
 include_once 'mission_forms.php';
 // This tells the code to link mission_forms.php to this php file
@@ -33,4 +33,4 @@ if(isset($_POST['submit']))
      mysqli_close($conn);
 }
 // If the code is successfully executed then the user will receive a message saying it was successfull, if it isnt then the user will recieve an error message as well as a message explaining why the connection was unsuccessful.
-*/?> 
+?> 
