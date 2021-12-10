@@ -26,6 +26,7 @@ tr:nth-child(even) {
 <table>
   <tr>
     <th>Target ID</th>
+    <
     <th>Destination</th>
     <th>Type</th>
     <th>Crew Size</th>
