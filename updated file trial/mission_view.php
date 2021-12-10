@@ -31,7 +31,7 @@
         </table>
     </body>
 </html> -->
-
+<
 <!DOCTYPE html>
 <html>
 <head>
@@ -89,13 +89,13 @@ try {
        //     echo "No entries found please enter information";
     //    }
       //  mysqli_close($conn);
+    
         
-        ?>
-<!--<tr>
+<tr>
 <th>Id</th>
 <th>\Name</th>
 </tr> -->
-<!-- /*
+
 $conn = mysqli_connect("localhost", "admin", "password", "test");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
