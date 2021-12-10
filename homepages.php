@@ -35,3 +35,5 @@
 <!--This will present six buttons which will lead the user into different locations so they can either create, edit or view missions and astronaut ids.-->
 </body>
 </html>
+<!--https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html-->
+<!--https://www.w3schools.com/bootstrap5/tryit.asp?filename=trybs_button_styles&stacked=h-->

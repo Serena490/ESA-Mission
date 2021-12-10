@@ -1,3 +1,4 @@
+<!--https://www.w3docs.com/snippets/html/how-to-create-an-html-button-that-acts-like-a-link.html -->
 <DOCTYPE html>
 <html>
 <head>
@@ -51,3 +52,4 @@ foreach ($result as $row) {
     echo "<tr><td>" .$row['target_id']."<td><td>". $row['destination']."<td><td>" . $row['type']."<td><td>" . $row['crew_size']."<td><td>" . $row['mission_name']."<td><td>" . $row['launch_date']."</tr></td>";
 }
 ?> 
+<!--https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table3-->

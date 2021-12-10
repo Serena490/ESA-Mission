@@ -20,7 +20,7 @@
                     <div class="page-header">
                         <h2>Astonaut Form</h2>
                     </div>
-                    <p>Please fill this form and submit to add employee record to the database.</p>
+                    <p>Please fill this form and submit to the database.</p>
                     <form action="astronaut_infos.php" method="post">
                         <!--aaaaaa-->
                         <div class="form-group">
@@ -39,3 +39,4 @@
     </div>
 </body>
 </html>
+<!--https://www.tutsmake.com/php-code-insert-data-into-mysql-database-from-form/ -->

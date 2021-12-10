@@ -34,3 +34,4 @@ if(isset($_POST['submit']))
 }
 // If the code is successfully executed then the user will receive a message saying it was successfull, if it isnt then the user will recieve an error message as well as a message explaining why the connection was unsuccessful.
 ?> 
+<!-- https://www.tutsmake.com/php-code-insert-data-into-mysql-database-from-form/-->
