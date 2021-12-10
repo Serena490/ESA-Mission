@@ -7,7 +7,6 @@
       if(!$conn){
           die('Could not Connect MySql Server:' .mysql_error());
         }
-        
 // This connects the php file to the phpmyadmin database by specifing the servername, username, password and database name
 include_once 'mission_forms.php';
 // This tells the code to link mission_forms.php to this php file
