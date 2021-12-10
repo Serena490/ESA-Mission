@@ -25,9 +25,12 @@ tr:nth-child(even) {
 
 <table>
   <tr>
-    <th>Company</th>
-    <th>Contact</th>
-    <th>Country</th>
+    <th>Target ID</th>
+    <th>Destination</th>
+    <th>Type</th>
+    <th>Crew Size</th>
+    <th>Mission Name</th>
+    <th>Launch Date</th>
   </tr>
   <tr>
 
@@ -44,8 +47,8 @@ if(!$conn){
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
 // $result = mysqli_fetch_assoc($result);
-foreach ($result as $row) {
-echo $row['target_id'];
-}
-
+//foreach ($result as $row) {
+//echo $row['target_id'];
+//}
+print_r($result["$target_id","$destination","$type","$crew_size","$mission_name","$launch_date"])
 ?> 
