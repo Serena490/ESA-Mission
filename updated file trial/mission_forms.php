@@ -84,7 +84,7 @@ This uses each  -->
                         </div>
                         <div class="form-group">
                             <label>Target ID</label>
-                            <input type="number" name="target_id" class="hidden">
+                            <input type="number" name="target_id" class="form-control">
                         </div>
                         <div class="form-group">
                             <label>Type</label>

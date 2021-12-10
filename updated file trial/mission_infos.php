@@ -57,9 +57,9 @@ if(isset($_POST['submit']))
      $mission_name = $_POST['mission_name'];
 // This tells the php file that each variable will equal the information which has been sent from the mission_forms.php file which is the user input inside the form
    //  $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
-     $sql = "INSERT INTO Mission (destination,type,crew_size,mission_name,launch_date)
+     $sql = "INSERT INTO Mission (target_id,destination,type,crew_size,mission_name,launch_date)
 
-     VALUES ('$destination','$type','$crew_size','$mission_name','$launch_date')";
+     VALUES ('$target_id','$destination','$type','$crew_size','$mission_name','$launch_date')";
 // The $sql attribute allows the information which has been inputted to the user to be sent to the database and translatted from php to SQL so that phpMyAdmin understands what it is being told to do 
 // When this is executed the information inputted by the user is saved under the variables and will be sent to the database and is inserted into the specified column names and table
      if (mysqli_query($conn, $sql)) {
