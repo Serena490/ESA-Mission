@@ -101,9 +101,10 @@ $conn=mysqli_connect($servername,$username,$password,"$dbname");
 if(!$conn){
     die('Could not Connect MySql Server:' .mysql_error());
     }
-$sql = "SELECT * FROM Astronaut";
-$result = $conn->query($conn, $sql);
-print_r($result);
+    else{echo "connected";}
+// $sql = "SELECT * FROM Astronaut";
+// $result = $conn->query($conn, $sql);
+// print_r($result);
 // if ($result->num_rows > 0) {
 // // output data of each row
 // while($row = $result->fetch_assoc()) {
