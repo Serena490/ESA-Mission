@@ -11,7 +11,9 @@ if(!$conn){
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
 $result = mysqli_fetch_assoc($result);
-echo $result['target_id'];
+foreach ($row in $result){
+    echo $row['target_id'];
+}
 
 
 ?> 
