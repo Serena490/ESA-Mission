@@ -43,6 +43,10 @@ if(isset($_POST['submit']))
       if(!$conn){
           die('Could not Connect MySql Server:' .mysql_error());
         }
+        else{
+             echo "connected"
+        }
+/*
 // This connects the php file to the phpmyadmin database by specifing the servername, username, password and database name
 include_once 'mission_forms.php';
 $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
