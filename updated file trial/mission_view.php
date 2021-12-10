@@ -62,20 +62,23 @@ tr:nth-child(even) {background-color: #f2f2f2}
      <th>Type</th>
      <th>Launch Date</th>
     </tr>
+    <tr>
+<th>Id</th>
+<th>\Name</th>
+</tr> -->
+<?php
+// $servername = "localhost";
+// $username = "admin";
+// $password = "password";
 
-    <?php
-$servername = "localhost";
-$username = "admin";
-$password = "password";
-
-try {
-  $conn = new PDO("mysql:host=$servername;dbname=ESA", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
-} catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
-}
+// try {
+//   $conn = new PDO("mysql:host=$servername;dbname=ESA", $username, $password);
+//   // set the PDO error mode to exception
+//   $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//   echo "Connected successfully";
+// } catch(PDOException $e) {
+//   echo "Connection failed: " . $e->getMessage();
+// }
 
 
     //$conn = mysqli_connect("localhost","admin","password","ESA");
@@ -90,25 +93,21 @@ try {
     //    }
       //  mysqli_close($conn);
     
-        
-<tr>
-<th>Id</th>
-<th>\Name</th>
-</tr> -->
-
-$conn = mysqli_connect("localhost", "admin", "password", "test");
+$conn = mysqli_connect("localhost", "admin", "password", "ESA");
 if ($conn->connect_error) {
 die("Connection failed: " . $conn->connect_error);
 }
-$sql = "SELECT ID, Name FROM test1";
+else {echo "connected";}
+$sql = "SELECT * FROM Astronaut";
 $result = $conn->query($sql);
-if ($result->num_rows > 0) {
-// output data of each row
-while($row = $result->fetch_assoc()) {
-echo "<tr><td>" . $row["ID"]. "</td><td>" . $row["Name"] . "</td></tr>";
-}
-echo "</table>";
-} else { echo "0 results"; }
+print_r($result);
+// if ($result->num_rows > 0) {
+// // output data of each row
+// while($row = $result->fetch_assoc()) {
+// echo "<tr><td>" . $row["ID"]. "</td><td>" . $row["Name"] . "</td></tr>";
+// }
+// echo "</table>";
+// } else { echo "0 results"; }
 $conn->close();
 ?>
 </table>
