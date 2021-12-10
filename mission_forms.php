@@ -100,6 +100,12 @@ This uses each  -->
                             <label>Launch Date</label>
                             <input type="date" name="launch_date" class="form-control">
                         </div>
+                        
+                        <div class="form-group">
+                            <label>Target ID</label>
+                            <input type="integer" name="target_id" class="form-control">
+                        </div>
+
                         <input type="submit" class="btn btn-primary" name="submit" value="Submit">
                     </form>
                 </div>

@@ -49,7 +49,7 @@ include_once 'mission_forms.php';
 // This tells the code to link mission_forms.php to this php file
 if(isset($_POST['submit']))
 {    
-     $target_id = '7'
+     $target_id = $_POST['target_id'];
      $destination = $_POST['destination'];
      $type = $_POST['type'];
      $crew_size = $_POST['crew_size'];
