@@ -11,6 +11,6 @@ if(!$conn){
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
 foreach ($result as $row) {
-    echo $row['target_id','destination','type','crew_size','mission_name','launch_date'];
+    echo $row['target_id']. $row['destination'] . $row['type'] . $row['crew_size'] . $row['mission_name'] . $row['launch_date'];
 }
 ?> 
