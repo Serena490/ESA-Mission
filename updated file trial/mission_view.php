@@ -10,10 +10,9 @@ if(!$conn){
 
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
-$result = mysqli_fetch_assoc($result);
-foreach ($row in $result){
-    echo $row['target_id'];
+// $result = mysqli_fetch_assoc($result);
+foreach ($result as $row) {
+echo $row['target_id'];
 }
-
 
 ?> 
