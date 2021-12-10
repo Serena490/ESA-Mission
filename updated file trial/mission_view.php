@@ -32,7 +32,7 @@
     </body>
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 <title>Table with database</title>
@@ -65,7 +65,7 @@ tr:nth-child(even) {background-color: #f2f2f2}
     <tr>
 <th>Id</th>
 <th>\Name</th>
-</tr> -->
+</tr> --> -->
 <?php
 // $servername = "localhost";
 // $username = "admin";
@@ -113,6 +113,6 @@ print_r($result);
 // } else { echo "0 results"; }
 $conn->close();
 ?>
-</table>
+<!-- </table>
 </body>
-</html>
+</html> -->
