@@ -20,7 +20,7 @@ if(isset($_POST['submit']))
      $type = $_POST['type'];
      $target_id = $conn->insert_id;
 // This tells the php file that each variable will equal the information which has been sent from the mission_forms.php file which is the user input inside the form
-     //$sql =  "SET FOREIGN_KEY_CHECKS = 0;";
+     $sql =  "SET FOREIGN_KEY_CHECKS = 0;";
      $sql = "INSERT INTO Mission (mission_name,destination,type,crew_size,launch_date,target_id)
      VALUES ('$name','$destination','$type','$crew_size','$launch_date','$target_id')";
 // The $sql attribute allows the information which has been inputted to the user to be sent to the database and translatted from php to SQL so that phpMyAdmin understands what it is being told to do 
