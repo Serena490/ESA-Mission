@@ -11,7 +11,7 @@ if(!$conn){
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
 $result = mysqli_fetch_assoc($result);
-echo $result['target_id'];
+echo $result['target_id','destination','type','crew_size','mission_name','launch_date'];
 
 
 ?> 
