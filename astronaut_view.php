@@ -23,6 +23,7 @@ tr:nth-child(even) {
 <body>
 
 <h2>Astronaut Table</h2>
+
 <?php
 $servername='localhost';
 $username='admin';
@@ -36,11 +37,6 @@ if(!$conn){
 $sql =  "SELECT * FROM Astronaut";
 $result = mysqli_query($conn, $sql);
 foreach ($result as $row) {
-    echo "<tr>";
-    echo "<td>" .$row['astronaut_id']."</td>"
-    echo "<td>". $row['astronaut_name']."</td>"
-    echo "<td>" . $row['no_missions']."</td>"
-    
-    </tr>";
+    echo "<tr><td>" .$row['astronaut_id']."<td><td>". $row['astronaut_name']."<td><td>" . $row['no_missions']."</tr></td>";
 }
 ?> 
