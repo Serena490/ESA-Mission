@@ -47,6 +47,6 @@ if(!$conn){
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
 foreach ($result as $row) {
-    echo "<tr><td>" .$row['target_id'].. $row['destination']."<td><td>" . $row['type']."<td><td>" . $row['crew_size']."<td><td>" . $row['mission_name']."<td><td>" . $row['launch_date']."</tr></td>";
+    echo "<tr><td>" .$row['target_id']."<td><td>". $row['destination']."<td><td>" . $row['type']."<td><td>" . $row['crew_size']."<td><td>" . $row['mission_name']."<td><td>" . $row['launch_date']."</tr></td>";
 }
 ?> 
