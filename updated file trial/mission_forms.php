@@ -82,10 +82,7 @@ This uses each  -->
                             <label>Destination</label>
                             <input type="text" name="destination" class="form-control">
                         </div>
-                        <div class="form-group">
-                            <label>Target ID</label>
-                            <input type="number" name="target_id" class="form-control">
-                        </div>
+                        
                         <div class="form-group">
                             <label>Type</label>
                             <input type="text" name="type" class="form-control">
