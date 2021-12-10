@@ -10,7 +10,8 @@ if(!$conn){
 
 $sql =  "SELECT * FROM Mission";
 $result = mysqli_query($conn, $sql);
-print_r($result);
+$result = mysqli_fetch_assoc($result);
+echo $result['target_id'];
 
 
 ?> 
